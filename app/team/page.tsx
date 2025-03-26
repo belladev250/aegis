@@ -110,9 +110,9 @@ const Team = () => {
                                 />
 
                                 <TeamMember
-                                    imageSrc="/adelaide.jpg"
-                                    name="Adélaïde Umugwaneza"
-                                    position="Archivist"
+                                    imageSrc="/urujeni.jpg"
+                                    name="Eugénie Urujeni"
+                                    position="Community Engagement & Support Officer"
                                     widthClass="w-full sm:w-3/4 lg:w-[23%]"
                                 />
                             </div>
@@ -121,31 +121,31 @@ const Team = () => {
 
                             <div className="flex flex-wrap gap-5">
                                 <TeamMember
-                                    imageSrc="/claude.jpg"
-                                    name="Jean Claude Rwigara"
-                                    position="Transcriber"
+                                    imageSrc="/clark.jpg"
+                                    name="Dr Phil Clark"
+                                    position="Research Advisor"
                                     widthClass="w-full sm:w-3/4 lg:w-[23%]"
                                 />
 
 
                                 <TeamMember
-                                    imageSrc="/urujeni.jpg"
-                                    name="Eugénie Urujeni"
-                                    position="Community Engagement & Support Officer"
+                                    imageSrc="/nicola.jpg"
+                                    name="Dr Nicola Palmer"
+                                    position="Research Advisor"
                                     widthClass="w-full sm:w-3/4 lg:w-[23%]"
                                 />
 
                                 <TeamMember
-                                    imageSrc="/jacques.jpg"
-                                    name="Jacques Rubayiza"
-                                    position="IT & Archive Officer"
+                                    imageSrc="/felix.png"
+                                    name="Mr Jason Mosley"
+                                    position="Research Advisor"
                                     widthClass="w-full sm:w-3/4 lg:w-[23%]"
                                 />
 
                                 <TeamMember
-                                    imageSrc="/prisca.jpg"
-                                    name="Prisca Umwanankunda"
-                                    position="Transcriber"
+                                    imageSrc="/felix.png"
+                                    name="Dr Felix Ndahinda"
+                                    position="Research Advisor"
                                     widthClass="w-full sm:w-3/4 lg:w-[23%]"
                                 />
                             </div>
