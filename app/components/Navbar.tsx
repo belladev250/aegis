@@ -12,10 +12,10 @@ const Navbar = () => {
       <div className='container mx-auto flex justify-between items-center p-4'>
         {/* Logo */}
         <div className='flex-shrink-0'>
-          <Image 
-            src='/aegisLogo.png' 
-            alt='Aegis Trust Logo' 
-            height={60} 
+          <Image
+            src='/aegisLogo.png'
+            alt='Aegis Trust Logo'
+            height={60}
             width={150}
             className='h-auto w-32 md:w-40'
             priority
@@ -24,11 +24,14 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className='hidden md:flex space-x-6 text-navy'>
+          <Link href="" className='hover:text-maroon transition-colors duration-200'>Home</Link>
+          <Link href="/about" className='hover:text-maroon transition-colors duration-200'>About Us</Link>
           <Link href="" className='hover:text-maroon transition-colors duration-200'>Aegis Research</Link>
           <Link href="" className='hover:text-maroon transition-colors duration-200'>Policy & Research</Link>
           <Link href="" className='hover:text-maroon transition-colors duration-200'>Get Involved</Link>
-          <Link href="" className='hover:text-maroon transition-colors duration-200'>Library</Link>
-          <Link href="/about" className='hover:text-maroon transition-colors duration-200'>About</Link>
+          <Link href="/news" className='hover:text-maroon transition-colors duration-200'>News</Link>
+          <Link href="/contact" className='hover:text-maroon transition-colors duration-200'>Contact Us</Link>
+          
         </nav>
 
         {/* Desktop Auth Buttons */}
@@ -40,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className='md:hidden text-navy focus:outline-none'
           onClick={() => setIsOpen(!isOpen)}
           aria-label='Toggle menu'
@@ -60,12 +63,15 @@ const Navbar = () => {
         {isOpen && (
           <div className='md:hidden absolute top-full left-0 right-0 bg-white shadow-md py-4 px-6'>
             <div className='flex flex-col space-y-4'>
+              <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Home</Link>
+              <Link href="/about" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>About</Link>
               <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Aegis Research</Link>
               <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Policy & Research</Link>
               <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Get Involved</Link>
-              <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Library</Link>
-              <Link href="/about" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>About</Link>
-              
+              <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>News</Link>
+              <Link href="/contact" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Contact Us</Link>
+
+
               <div className='pt-4 border-t border-gray-100'>
                 <Link href="" className='block text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Login</Link>
                 <Link href="" className='block bg-maroon text-white px-4 py-2 rounded-md hover:bg-maroon-dark transition-colors duration-200 text-center mt-2' onClick={() => setIsOpen(false)}>

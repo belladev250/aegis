@@ -55,7 +55,7 @@ const TeamMember = ({
 const Team = () => {
     return (
         <div className='absolute inset-0 bg-[#F7F2F2]'>
-            <div className="overflow-y-auto h-full pt-16 lg:pt-20">
+            <div className="overflow-y-auto h-full pt-24 lg:pt-32">
                 <div className="container mx-auto flex flex-col lg:flex-row px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800 leading-relaxed">
 
                     {/* Navigation Sidebar */}
@@ -66,12 +66,12 @@ const Team = () => {
                                 after:transition-all after:duration-300 hover:after:w-full">
                                 About us
                             </Link>
-                            <Link href="/community" className="block text-maroon font-bold px-1 py-1 relative 
+                            <Link href="/community" className="block text-gray-800 font-medium px-1 py-1 relative 
                                 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-black 
                                 after:transition-all after:duration-300 hover:after:w-full">
                                 Our community
                             </Link>
-                            <Link href="/team" className="block text-gray-800 font-medium px-1 py-1 relative 
+                            <Link href="/team" className="block text-maroon font-bold px-1 py-1 relative 
                                 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-black 
                                 after:transition-all after:duration-300 hover:after:w-full">
                                 Our team
@@ -82,7 +82,7 @@ const Team = () => {
                     {/* Main Content */}
                     <div className="lg:w-3/4 lg:pl-8">
                         {/* Team Section */}
-                        <div className="mt-4 lg:mt-16 space-y-8">
+                        <div className="space-y-8">
                             <h2 className="text-xl sm:text-2xl font-semibold">RPHE Team</h2>
 
                             {/* Using the reusable TeamMember component */}
