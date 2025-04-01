@@ -8,23 +8,25 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className='sticky top-0 z-50 w-full bg-white shadow-sm'>
-      <div className='container mx-auto flex justify-between items-center p-4'>
+<nav className='fixed top-0 left-0 w-full z-50 bg-white shadow-sm'>
+<div className='flex justify-between items-center p-4'>
         {/* Logo */}
         <div className='flex-shrink-0'>
+          <Link href='/'>
           <Image
             src='/aegisLogo.png'
             alt='Aegis Trust Logo'
-            height={60}
+            height={80}
             width={150}
             className='h-auto w-32 md:w-40'
             priority
           />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className='hidden md:flex space-x-6 text-navy'>
-          <Link href="" className='hover:text-maroon transition-colors duration-200'>Home</Link>
+          <Link href="/" className='hover:text-maroon transition-colors duration-200'>Home</Link>
           <Link href="/about" className='hover:text-maroon transition-colors duration-200'>About Us</Link>
           <Link href="" className='hover:text-maroon transition-colors duration-200'>Aegis Research</Link>
           <Link href="" className='hover:text-maroon transition-colors duration-200'>Policy & Research</Link>
@@ -63,7 +65,7 @@ const Navbar = () => {
         {isOpen && (
           <div className='md:hidden absolute top-full left-0 right-0 bg-white shadow-md py-4 px-6'>
             <div className='flex flex-col space-y-4'>
-              <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Home</Link>
+              <Link href="/" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Home</Link>
               <Link href="/about" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>About</Link>
               <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Aegis Research</Link>
               <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Policy & Research</Link>
@@ -82,7 +84,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </header>
+    </nav>
   );
 }
 
