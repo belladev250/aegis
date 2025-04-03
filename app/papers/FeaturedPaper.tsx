@@ -13,14 +13,14 @@ const FeaturedPaper = ({ imageSrc, title, id }: FeaturedPaperProps) => {
             <div className='relative h-48 w-full mb-4'>
                 <Image
                     src={imageSrc}
-                    alt='Article Image'
+                    alt='Paper Image'
                     fill
                     className='object-cover rounded-md'
                 />
             </div>
             <p className='text-lg font-medium mb-4'>{title}</p>
             <Link
-                href={`/working-papers/${id}`}
+                href={`/papers/${id}`}
                 className='text-maroon hover:text-maroon-dark transition-colors duration-200 font-bold'
             >
                 Read More →

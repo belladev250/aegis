@@ -5,19 +5,19 @@ import FeaturedPaper from './FeaturedPaper';
 const WorkingPapers = () => {
     const featuredPapers = [
         {
-            id: 'aegis-trust-empowers-researchers',
-            imageSrc: '/n-one.png',
-            title: 'Aegis Trust empowers Rwandan researchers to take lessons to the world'
+            id: 'livehood-recovery-for-peace-and-reconciliation',
+            imageSrc: '/papers.jpg',
+            title: 'Livehood recovery for peace and reconciliation The case of Rukara Reconciliation Village'
         },
         {
-            id: 'africa-kommit-fellowship-program',
-            imageSrc: '/n-two.png',
-            title: 'AFRIKA KOMMT! FELLOWSHIP PROGRAM 2016 – 2018'
+            id: 'unfolding-the-lived-experience-of-children-born-of-genocidal-rape-in-rwanda',
+            imageSrc: '/papers.jpg',
+            title: 'Unfolding the lived experience of children born of genocidal rape in Rwanda'
         },
         {
-            id: 'next-goal-for-seeds-of-peace',
-            imageSrc: '/n-thre.png',
-            title: 'Next goal for Seeds of Peace: Putting campers to work'
+            id: 'living-under-the-shadow-of-a-parents-criminal-past',
+            imageSrc: '/papers.jpg',
+            title: 'Living under the shadow of a parent’s criminal past: An exploration of the meaning of being a génocidaire’s'
         }
     ];
 
@@ -26,7 +26,7 @@ const WorkingPapers = () => {
             <div className='overflow-y-auto h-full pt-24 lg:pt-32'>
                 <div className="container mx-auto flex flex-col lg:flex-row px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800 leading-relaxed">
                     <div className='w-full lg:w-1/3 mt-8'>
-                        <Link href="/" className='mt-8 inline-block text-maroon font-bold hover:text-maroon-dark transition-colors'>
+                        <Link href="/research" className='mt-8 inline-block text-maroon font-bold hover:text-maroon-dark transition-colors'>
                             ← AEGIS Research
                         </Link>
                         <h1 className='text-2xl sm:text-3xl font-semibold mb-4 lg:mb-5 text-gray-900'>AEGIS Working Papers</h1>
