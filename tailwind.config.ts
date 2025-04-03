@@ -13,7 +13,8 @@ const config: Config = {
         foreground: "var(--foreground)",
         navy:'#33445B',
         maroon:'#772D2B',
-        borderColor:'#CACCD3'
+        borderColor:'#CACCD3',
+        beige:'#F2F2F2'
       },
     },
   },
