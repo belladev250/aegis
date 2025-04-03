@@ -4,7 +4,7 @@ import { IoChevronForward } from "react-icons/io5";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className=" relative z-40 min-h-screen bg-white">
       <main className="">   
   <div className="h-[80vh] lg:h-[95vh]  mt-8">
   <Image
@@ -193,7 +193,11 @@ export default function Home() {
 
   </div>
 
+
+  <p className=" text-3xl font-bold"> Events   </p>
+
   <div className="flex w-full space-x-12">
+
 
   <div className="space-y-4 border -2 border-borderColor p-4 rounded-lg w-1/2">
     <p className=" text-2xl font-bold"> Upcoming events</p>
@@ -212,11 +216,46 @@ export default function Home() {
 
   </div>
 
-
   </div>
 </div>
 
 
+{/* sixth section */}
+
+
+<div className="flex p-16 w-full">
+
+<div className="w-1/2">
+<Image src='/pen2.png' alt="bg" width={530} height={530}/>
+</div>
+
+<div className="w-1/2 space-y-6">
+
+<div className="space-y-4">
+    <p className=" text-2xl font-bold"> Propose a research project  </p>
+    <p className="text-md">Our research projects are aimed at answering diverse research questions
+       giving the opportunity to study an area of interest in depth. </p>
+    
+    <button className="p-4 border border-maroon text-maroon rounded-lg">Submit a proposal</button>
+
+  </div>
+
+  <div className="space-y-4 ">
+    <p className=" text-2xl font-bold"> Submit research materials </p>
+    <p className="text-md">We welcome any site visitor to submit research papers, 
+      policy briefs, policy documents, research-relevant audio visual materials and
+       books to become publicly accessible on GRH. </p>
+    
+    <button className="p-4 border border-maroon text-maroon rounded-lg">Submit Your Research</button>
+
+  </div>
+
+
+</div>
+
+
+
+</div>
 
    
 
