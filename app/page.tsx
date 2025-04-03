@@ -45,9 +45,9 @@ export default function Home() {
       <p>Since 2014, the Aegis Trust with the financial support from the UK Department for International Development (DfID) and Swedish International Development Cooperation Agency (Sida) has provided competitive research grants to Rwandan researchers working on various topics examining Rwanda's past, 
         present and future from various disciplinary perspectives that concern peacebuilding. </p>
 
-       <div className="flex space-x-2">
-      <p className="text-maroon">Learn more </p>
-      <IoChevronForward className="text-maroon text-lg"/>
+       <div className="flex space-x-2 cursor-pointer">
+      <p className="text-maroon texl-lg">Learn more </p>
+      <IoChevronForward className="text-maroon text-xl"/>
       </div>
 
     </div>
@@ -98,6 +98,26 @@ export default function Home() {
 </div>
 
 </div>
+
+</div>
+
+{/* the third section  */}
+<div className="p-16 flex w-full space-x-32 ">
+
+  <div className="w-4/5 space-y-6">
+  <p className="font-bold text-3xl">News</p>
+  <p className="text-lg">This section presents news of activities organized around the Research, 
+    Policy and Higher Education (RPHE) programme but also what happens around the world, 
+    related to genocide and peacebuilding. The section also presents opportunities including our research consultation campaigns, 
+    call for research proposals, conferences and research grants</p>
+
+    <button className="p-4 border border-maroon text-maroon rounded-lg">See more articles</button>
+  </div>
+
+  <div className="w-1/2 object-cover">
+  <Image src='/consultation.png' alt="default" width={400} height={400}/>
+
+  </div>
 
 </div>
 
