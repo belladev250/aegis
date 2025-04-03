@@ -25,10 +25,10 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className='hidden md:flex space-x-6 text-navy'>
+        <nav className='hidden md:flex text-sm space-x-6 text-navy mr-20 p-2'>
           <Link href="/" className='hover:text-maroon transition-colors duration-200'>Home</Link>
           <Link href="/about" className='hover:text-maroon transition-colors duration-200'>About Us</Link>
-          <Link href="" className='hover:text-maroon transition-colors duration-200'>Aegis Research</Link>
+          <Link href="/research" className='hover:text-maroon transition-colors duration-200'>Aegis Research</Link>
           <Link href="" className='hover:text-maroon transition-colors duration-200'>Policy & Research</Link>
           <Link href="" className='hover:text-maroon transition-colors duration-200'>Get Involved</Link>
           <Link href="/news" className='hover:text-maroon transition-colors duration-200'>News</Link>
@@ -37,12 +37,7 @@ const Navbar = () => {
         </nav>
 
         {/* Desktop Auth Buttons */}
-        <div className='hidden md:flex items-center space-x-6'>
-          <Link href="" className='text-navy hover:text-maroon transition-colors duration-200'>Login</Link>
-          <Link href="" className='bg-maroon text-white px-4 py-2 rounded-md hover:bg-maroon-dark transition-colors duration-200'>
-            Community
-          </Link>
-        </div>
+       
 
         {/* Mobile Menu Button */}
         <button
@@ -67,19 +62,14 @@ const Navbar = () => {
             <div className='flex flex-col space-y-4'>
               <Link href="/" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Home</Link>
               <Link href="/about" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>About</Link>
-              <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Aegis Research</Link>
+              <Link href="/research" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Aegis Research</Link>
               <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Policy & Research</Link>
               <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Get Involved</Link>
               <Link href="" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>News</Link>
               <Link href="/contact" className='text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Contact Us</Link>
 
 
-              <div className='pt-4 border-t border-gray-100'>
-                <Link href="" className='block text-navy hover:text-maroon transition-colors duration-200 py-2' onClick={() => setIsOpen(false)}>Login</Link>
-                <Link href="" className='block bg-maroon text-white px-4 py-2 rounded-md hover:bg-maroon-dark transition-colors duration-200 text-center mt-2' onClick={() => setIsOpen(false)}>
-                  Community
-                </Link>
-              </div>
+           
             </div>
           </div>
         )}

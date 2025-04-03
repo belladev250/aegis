@@ -121,6 +121,105 @@ export default function Home() {
 
 </div>
 
+   {/* fourth section  */}
+<div className="p-16 space-y-12 bg-beige">
+  <div className="flex w-full  ">
+
+    <div className="w-1/2 object-cover flex-shrink-0">
+     <Image src='/pen.png' alt="pen" width={500} height={500} />
+    </div>
+
+    <div className="w-1/2 space-y-4">
+     <p className="font-bold text-3xl">Our Policy & Practice</p>
+     <p className="text-lg">This section presents to you research material that is relevant to policy. You will find policy briefs and documents,
+       information on policy-relevant events organised by Aegis Trust or its partners as well as audiovisual research findings 
+       that is relevant for policymakers.</p>
+
+    <button className="bg-maroon text-white rounded-lg p-4">Submit Research</button>
+    </div>
+
+  </div>
+
+  <div className="flex space-x-6">
+
+  <div className="space-y-4 border -2 border-borderColor p-6 rounded-lg">
+    <p className=" text-2xl"> Policy Documents</p>
+    <p className="text-md">The following presents documents related to policy</p>
+       <div className="flex space-x-2 cursor-pointer">
+      <p className="text-maroon texl-lg">Learn more </p>
+      <IoChevronForward className="text-maroon text-xl"/>
+      </div>
+  </div>
+
+  <div className="space-y-4 border -2 border-borderColor p-6 rounded-lg">
+    <p className=" text-2xl"> Audiovisual</p>
+    <p className="text-md">The following presents audiovisuals related to policy</p>
+       <div className="flex space-x-2 cursor-pointer">
+      <p className="text-maroon texl-lg">Learn more </p>
+      <IoChevronForward className="text-maroon text-xl"/>
+      </div>
+  </div>
+
+  <div className="space-y-4 border -2 border-borderColor p-6 rounded-lg">
+    <p className=" text-2xl"> Events</p>
+    <p className="text-md">The following presents policy relevant events organized by Aegis Trust.</p>
+       <div className="flex space-x-2 cursor-pointer">
+      <p className="text-maroon texl-lg">Learn more </p>
+      <IoChevronForward className="text-maroon text-xl"/>
+      </div>
+  </div>
+
+  </div>
+</div>
+
+{/* Fith section */}
+
+<div className="p-16 space-y-12 bg-white">
+  <div className="flex w-full space-x-20">
+
+    <div className="w-1/2 space-y-4">
+     <p className="font-bold text-3xl">Get Involved</p>
+     <p className="text-lg">Join our network of researchers, policymakers,
+       and practitioners dedicated to genocide prevention and peacebuilding. 
+       Learn how you can get involved in our events, contribute relevant materials to our library,
+       and stay updated on research and policy opportunities.</p>
+
+    <button className="bg-maroon text-white rounded-lg p-4">Join our community</button>
+    </div>
+
+    <div className="w-1/2 object-cover flex-shrink-0">
+     <Image src='/pen.png' alt="pen" width={600} height={600} />
+    </div>
+
+  </div>
+
+  <div className="flex w-full space-x-12">
+
+  <div className="space-y-4 border -2 border-borderColor p-4 rounded-lg w-1/2">
+    <p className=" text-2xl font-bold"> Upcoming events</p>
+    <p className="text-md">Explore events around the research and policy community organized by Aegis Trust and 
+      other institutions focused on genocide prevention and peacebuilding.</p>
+      <button className="p-4 border border-maroon text-maroon rounded-lg">Browse our events</button>
+
+  </div>
+
+  <div className="space-y-4 border -2 border-borderColor p-6 rounded-lg w-1/2">
+    <p className=" text-2xl font-bold"> Share your event with our network    </p>
+    <p className="text-md">Please let us know about an event you are hosting that is relevant to peacebuilding, research, policy, or practice. We will publish your event details
+       on our events page and share it with our network.</p>
+    
+    <button className="p-4 border border-maroon text-maroon rounded-lg">Share your event</button>
+
+  </div>
+
+
+  </div>
+</div>
+
+
+
+   
+
 
  </main>
     

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { IoChevronForward } from "react-icons/io5";
 
 export default function Research() {
@@ -60,6 +61,71 @@ export default function Research() {
                     research materials are discussed at various stages. The full package is intended to ensure that the research outcomes conform to
                     the highest standards of academic research and can therefore be published in renowned international journals</p>
             </div>
+
+            <div className="p-6 bg-[#F7F2F2] mt-4">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-gray-800 leading-relaxed space-y-4">
+                    <div className="flex space-x-6 w-full">
+                        <div className="space-y-4 border w-1/3 border-borderColor p-6 rounded-lg">
+                            <p className=" text-xl font-semibold"> Aegis Working Papers</p>
+                            <p className="text-md">The followig research working papers were produced by Rwandan authors after their participation in..</p>
+                            <Link href="/papers" className='inline-flex items-center text-maroon font-bold hover:text-maroon-dark transition-colors'>
+                                <div className="flex space-x-2 cursor-pointer">
+                                    <p className="text-maroon texl-lg">Learn more </p>
+                                    <IoChevronForward className="text-maroon text-xl" />
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="space-y-4 border w-1/3  border-borderColor p-6 rounded-lg">
+                            <p className=" text-xl font-semibold">Aegis's policy briefs</p>
+                            <p className="text-md">The following policy briefs were produced by Rwandan authors after their participation in the..</p>
+                            <Link href="/papers" className='inline-flex items-center text-maroon font-bold hover:text-maroon-dark transition-colors'>
+                                <div className="flex space-x-2 cursor-pointer">
+                                    <p className="text-maroon texl-lg">Learn more </p>
+                                    <IoChevronForward className="text-maroon text-xl" />
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="space-y-4 w-1/3 border border-borderColor p-6 rounded-lg">
+                            <p className=" text-xl font-semibold">RPHE Journal Articles and Book</p>
+                            <p className="text-md">The following peer-reviewed journal articles and book chapters were published by .</p>
+                            <Link href="/papers" className='inline-flex items-center text-maroon font-bold hover:text-maroon-dark transition-colors'>
+                                <div className="flex space-x-2 cursor-pointer">
+                                    <p className="text-maroon texl-lg">Learn more </p>
+                                    <IoChevronForward className="text-maroon text-xl" />
+                                </div>
+                            </Link>
+                        </div>
+
+                    </div>
+                    <div className="flex space-x-6 w-full">
+                        <div className="space-y-4 border w-1/3 border-borderColor p-6 rounded-lg">
+                            <p className="text-xl font-semibold">Research Projects</p>
+                            <p className="text-md">Our research projects are aimed at answering diverse research ques…</p>
+                            <Link href="/papers" className='inline-flex items-center text-maroon font-bold hover:text-maroon-dark transition-colors'>
+                                <div className="flex space-x-2 cursor-pointer">
+                                    <p className="text-maroon texl-lg">Learn more </p>
+                                    <IoChevronForward className="text-maroon text-xl" />
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="space-y-4 border w-1/3  border-borderColor p-6 rounded-lg">
+                            <p className="text-xl font-semibold">Aegis Research Event</p>
+                            <p className="text-md">The following presents events organized to support knowledge sharing among..</p>
+                            <Link href="/papers" className='inline-flex items-center text-maroon font-bold hover:text-maroon-dark transition-colors'>
+                                <div className="flex space-x-2 cursor-pointer">
+                                    <p className="text-maroon texl-lg">Learn more </p>
+                                    <IoChevronForward className="text-maroon text-xl" />
+                                </div>
+                            </Link>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 }
