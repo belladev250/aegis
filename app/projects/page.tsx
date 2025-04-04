@@ -1,7 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import FeaturedProject from './FeaturedProjects';
 
 const ResearchProjects = () => {
+
+    const featuredProjects = [
+        {
+            id: 'youth-physcial-and-mental-health',
+            imageSrc: '/project-1.png',
+            title: 'Building Cultures Of Peace In Rwandan Schools',
+            funder: 'Anne',
+            period: '2026'
+        }
+    ];
+
     return (
         <div className='absolute inset-0'>
             <div className='overflow-y-auto h-full pt-24 lg:pt-32'>
@@ -25,52 +37,20 @@ const ResearchProjects = () => {
 
                 {/* Section two */}
                 <div className="container mx-auto flex flex-col lg:flex-row px-4 space-x-8 sm:px-6 lg:px-8 py-8 font-sans text-gray-800 leading-relaxed">
-                    {/* First Research Project */}
-                    <div className="rounded-lg mb-8 w-1/2 border border-lg">
-                        <div className="md:w-full">
-                            <Image
-                                src="/project-1.png" // Replace with your actual image path
-                                alt="Peace education in Rwandan schools"
-                                width={400}
-                                height={300}
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                        <div className="p-6 space-y-2">
-                            <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                                Building Cultures Of Peace in Rwandan Schools
-                            </h3>
-                            <div>
-                                <span className="font-semibold">Funder:</span> Global Research Fund-UK
-                            </div>
-                            <div>
-                                <span className="font-semibold">Period:</span> January 2020 – March 2022
-                            </div>
-                        </div>
-                    </div>
-
-
-                    {/* Second Research Project */}
-                    <div className="rounded-lg mb-8 w-1/2 border border-lg">
-                        <div className="md:w-full">
-                            <Image
-                                src="/project-2.jpg" // Replace with your actual image path
-                                alt="Peace education in Rwandan schools"
-                                width={400}
-                                height={300}
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                        <div className="p-6 space-y-2">
-                            <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                            Research-Led Peace Education As Crisis Prevention In Central Africa
-                            </h3>
-                            <div>
-                                <span className="font-semibold">Funder:</span> British Academy Funded Project
-                            </div>
-                            <div>
-                                <span className="font-semibold">Period:</span> March 2020 – March 2022
-                            </div>
+                   
+                    <div className='container mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800 leading-relaxed'>
+                        <h1 className='text-xl sm:text-2xl font-semibold text-gray-900'>Projects</h1>
+                        <div className='flex flex-col lg:flex-row gap-6 w-full mt-6'>
+                            {featuredProjects.map(project => (
+                                <FeaturedProject
+                                    key={project.id}
+                                    imageSrc={project.imageSrc}
+                                    title={project.title}
+                                    id={project.id}
+                                    funder={project.funder}
+                                    period={project.period}
+                                />
+                            ))}
                         </div>
                     </div>
 

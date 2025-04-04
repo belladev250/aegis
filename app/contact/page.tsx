@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Contact = () => {
     return (
-        <div className='absolute inset-0'>
+        <div className='relative z-40 min-h-screen bg-white'>
             {/* Scrollable content area */}
             <div className='overflow-y-auto h-full pt-24 lg:pt-32'>
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800 leading-relaxed">

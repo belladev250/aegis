@@ -3,8 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const About = () => {
-    return ( 
-        <div className='absolute inset-0 bg-[#F7F2F2]'>
+    return (
+        <div className='relative z-40 min-h-screen bg-[#F7F2F2]'>
+            <div className="">
             {/* Scrollable content area */}
             <div className='overflow-y-auto h-full pt-24 lg:pt-32'>
                 <div className="container mx-auto flex flex-col lg:flex-row px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800 leading-relaxed">
@@ -44,8 +45,8 @@ const About = () => {
                             </div>
 
                             <div className='lg:w-1/3'>
-                                <Image 
-                                    src='/about.png' 
+                                <Image
+                                    src='/about.png'
                                     alt='About illustration'
                                     height={300}
                                     width={500}
@@ -69,21 +70,21 @@ const About = () => {
                             <div className="lg:w-1/2">
                                 <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-900">Aegis Trust</h2>
                                 <p className="mb-4">
-                                    Aegis Trust is an international organisation that originated in the UK in 2000. Its mission is to work towards the prediction, 
-                                    prevention and ultimately the elimination of genocide for the benefit of humanity, primarily through research, education and 
-                                    the dissemination of information and advice. In 2002, Aegis Trust was invited to work with Rwandan authorities to establish 
-                                    the Kigali Genocide Memorial which opened in 2004. Rwanda has remained the largest country involvement for Aegis Trust up 
-                                    to the present, although Aegis plans to bring the lessons and inspiration of Rwandan peacebuilding experiences to other 
+                                    Aegis Trust is an international organisation that originated in the UK in 2000. Its mission is to work towards the prediction,
+                                    prevention and ultimately the elimination of genocide for the benefit of humanity, primarily through research, education and
+                                    the dissemination of information and advice. In 2002, Aegis Trust was invited to work with Rwandan authorities to establish
+                                    the Kigali Genocide Memorial which opened in 2004. Rwanda has remained the largest country involvement for Aegis Trust up
+                                    to the present, although Aegis plans to bring the lessons and inspiration of Rwandan peacebuilding experiences to other
                                     countries in east and central Africa as part of its regional strategy. Click here to learn more on Aegis Trust.
                                 </p>
                             </div>
                             <div className="lg:w-1/2">
                                 <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-900">Genocide Research Hub</h2>
                                 <p className="mb-4">
-                                    The hub contains a collection of quality research, policy briefs, a directory of actors, and a section on news relating to 
-                                    Rwanda peacebuilding-related events. Its policy and practice section is specifically designed for policymakers and practitioners 
-                                    and includes new publications, policies and events. More broadly, the world news section keeps track of genocide and mass 
-                                    atrocities in Africa and around the world. A newsletter distributes high-quality information and news about policy-relevant 
+                                    The hub contains a collection of quality research, policy briefs, a directory of actors, and a section on news relating to
+                                    Rwanda peacebuilding-related events. Its policy and practice section is specifically designed for policymakers and practitioners
+                                    and includes new publications, policies and events. More broadly, the world news section keeps track of genocide and mass
+                                    atrocities in Africa and around the world. A newsletter distributes high-quality information and news about policy-relevant
                                     research and events; please click here to register for our regular newsletter and join our community.
                                 </p>
                             </div>
@@ -94,19 +95,19 @@ const About = () => {
                             <div className="lg:w-1/2">
                                 <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-900">Research, Policy & Higher Education</h2>
                                 <p className="mb-4">
-                                    The Genocide Research Hub is run by the Research, Policy and Higher Education (RPHE) programme, part of Aegis Trust's 
+                                    The Genocide Research Hub is run by the Research, Policy and Higher Education (RPHE) programme, part of Aegis Trust's
                                     Genocide Research and Reconciliation programme which is funded by the Department for International Development of the United Kingdom.
-                                    The programme informs policy and practice on peacebuilding and genocide prevention in Rwanda with evidence, and it also supports 
-                                    the Rwandan research community as they provide and communicate this evidence. RPHE works in partnership with Rwandan researchers, 
+                                    The programme informs policy and practice on peacebuilding and genocide prevention in Rwanda with evidence, and it also supports
+                                    the Rwandan research community as they provide and communicate this evidence. RPHE works in partnership with Rwandan researchers,
                                     policymakers and practitioners.
                                 </p>
                             </div>
                             <div className="lg:w-1/2">
                                 <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-900">Call for quality research material</h2>
                                 <p className="mb-4">
-                                    At the Genocide Research Hub, we encourage the submission of research, policy briefs, policy documents, audio visual materials and 
-                                    books for inclusion in our publicly available library of materials. Please click here to submit research materials. The material 
-                                    submitted for publication on the Genocide Research Hub undergoes a strict quality control process to ensure that selected content 
+                                    At the Genocide Research Hub, we encourage the submission of research, policy briefs, policy documents, audio visual materials and
+                                    books for inclusion in our publicly available library of materials. Please click here to submit research materials. The material
+                                    submitted for publication on the Genocide Research Hub undergoes a strict quality control process to ensure that selected content
                                     is of high academic quality. We welcome a variety of perspectives within the themes covered by this site.
                                 </p>
                             </div>
@@ -114,6 +115,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
