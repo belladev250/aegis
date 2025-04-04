@@ -32,8 +32,13 @@ export default function RootLayout({
       >
         {children}
 
+<<<<<<< HEAD
         <Navbar />
         {/* <Footer /> */}
+=======
+<Navbar/>
+ <Footer/> 
+>>>>>>> 05bed084d867de2e8a42831c024c8011b432041d
 
       </body>
     </html>
