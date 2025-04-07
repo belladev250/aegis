@@ -22,7 +22,7 @@ const WorkingPapers = () => {
     ];
 
     return (
-        <div className='absolute inset-0'>
+        <div className='relative z-40 min-h-screen bg-white'>
             <div className='overflow-y-auto h-full pt-24 lg:pt-32'>
                 <div className="container mx-auto flex flex-col lg:flex-row px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800 leading-relaxed">
                     <div className='w-full lg:w-1/3 mb-8 space-y-2'>

@@ -13,7 +13,7 @@ const ArticlePage = () => {
 
   if (!article) {
     return (
-      <div className='absolute inset-0 flex items-center justify-center'>
+      <div className='relative z-40 min-h-screen flex items-center justify-center'>
         <div className='text-center'>
           <h1 className='text-2xl font-bold'>Article not found</h1>
           <Link href="/news" className='mt-4 inline-block text-maroon font-bold'>
@@ -25,7 +25,7 @@ const ArticlePage = () => {
   }
 
   return (
-    <div className='absolute inset-0'>
+    <div className='relative z-40 min-h-screen bg-white'>
       <div className='overflow-y-auto h-full pt-24 lg:pt-32'>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans text-gray-800 leading-relaxed">
           <h1 className='text-3xl sm:text-4xl font-bold mb-6 text-gray-900'>{article.title}</h1>

@@ -49,7 +49,7 @@ const PaperPage = () => {
 
   if (!paper) {
     return (
-      <div className='min-h-screen flex items-center justify-center p-4'>
+      <div className='relative z-40 flex items-center justify-center p-4 '>
         <div className='text-center'>
           <h1 className='text-2xl font-bold'>Paper not found</h1>
           <Link href="/research" className='mt-4 inline-block text-maroon font-bold'>
@@ -61,7 +61,7 @@ const PaperPage = () => {
   }
 
   return (
-    <div className='min-h-screen bg-white'>
+    <div className='relative z-40 min-h-screen bg-white'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8 py-32'>
 
         {/* Paper header section */}

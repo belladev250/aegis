@@ -28,7 +28,7 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className='min-h-screen bg-white'>
+    <div className='relative z-40 min-h-screen bg-white'>
       <div className='overflow-y-auto h-full pt-20 md:pt-24 lg:pt-32'>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8 font-sans text-gray-800 leading-relaxed">
 
