@@ -56,7 +56,7 @@ export default function Home() {
                   <p className="font-bold text-3xl text-navy">Aegis Research</p>
                   <p>Since 2014, the Aegis Trust with the financial support from the UK Department for International Development (DfID) and Swedish International Development Cooperation Agency (Sida) has provided competitive research grants to Rwandan researchers working on various topics examining Rwanda's past, present and future from various disciplinary perspectives that concern peacebuilding.</p>
 
-                  <Link href="/events" className='mt-4 inline-block text-maroon'>
+                  <Link href="/research" className='mt-4 inline-block text-maroon'>
                     <div className="flex items-center gap-2 cursor-pointer">
                       <p className="text-maroon text-lg">Learn more</p>
                       <IoChevronForward className="text-maroon text-xl" />
@@ -159,7 +159,9 @@ export default function Home() {
             <div className="lg:w-1/2 space-y-4">
               <p className="font-bold text-3xl">Our Policy & Practice</p>
               <p className="text-lg">This section presents to you research material that is relevant to policy. You will find policy briefs and documents, information on policy-relevant events organised by Aegis Trust or its partners as well as audiovisual research findings that is relevant for policymakers.</p>
-              <button className="bg-maroon text-white rounded-lg p-4">Submit Research</button>
+              <Link href="/submitresearch" className='mt-4 inline-block text-maroon'>
+                <button className="bg-maroon text-white rounded-lg p-4">Submit Research</button>
+              </Link>
             </div>
           </div>
 
