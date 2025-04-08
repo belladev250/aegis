@@ -29,7 +29,9 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-10 lg:gap-20 text-sm lg:text-lg">
-              <button className="bg-maroon text-white p-3 rounded-md">Submit Your Research</button>
+              <Link href="/submitresearch" className='mt-4 inline-block text-maroon'>
+                <button className="bg-maroon text-white p-3 rounded-md">Submit Your Research</button>
+              </Link>
               <Link href="/joincommunity" className='mt-4 inline-block text-maroon'>
                 <button className="bg-white text-maroon p-3 rounded-md">Join Our Community</button>
               </Link>
