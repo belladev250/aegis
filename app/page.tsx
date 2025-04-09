@@ -178,10 +178,12 @@ export default function Home() {
             <div className="space-y-4 border-2 border-borderColor p-6 rounded-lg">
               <p className="text-2xl">Audiovisual</p>
               <p className="text-md">The following presents audiovisuals related to policy</p>
-              <div className="flex items-center gap-2 cursor-pointer">
-                <p className="text-maroon text-lg">Learn more</p>
-                <IoChevronForward className="text-maroon text-xl" />
-              </div>
+              <Link href="/audiovisual" className='mt-4 inline-block text-maroon'>
+                <div className="flex items-center gap-2 cursor-pointer">
+                  <p className="text-maroon text-lg">Learn more</p>
+                  <IoChevronForward className="text-maroon text-xl" />
+                </div>
+              </Link>
             </div>
 
             <div className="space-y-4 border-2 border-borderColor p-6 rounded-lg">
@@ -223,13 +225,17 @@ export default function Home() {
             <div className="space-y-4 border-2 border-borderColor p-4 rounded-lg lg:w-1/2">
               <p className="text-2xl font-bold">Upcoming events</p>
               <p className="text-md">Explore events around the research and policy community organized by Aegis Trust and other institutions focused on genocide prevention and peacebuilding.</p>
-              <button className="p-4 border border-maroon text-maroon rounded-lg">Browse our events</button>
+              <Link href="/events" className='mt-4 inline-block text-maroon'>
+                <button className="p-4 border border-maroon text-maroon rounded-lg">Browse our events</button>
+              </Link>
             </div>
 
             <div className="space-y-4 border-2 border-borderColor p-6 rounded-lg lg:w-1/2">
               <p className="text-2xl font-bold">Share your event with our network</p>
               <p className="text-md">Please let us know about an event you are hosting that is relevant to peacebuilding, research, policy, or practice. We will publish your event details on our events page and share it with our network.</p>
-              <button className="p-4 border border-maroon text-maroon rounded-lg">Share your event</button>
+              <Link href="/submitevent" className='mt-4 inline-block text-maroon'>
+                <button className="p-4 border border-maroon text-maroon rounded-lg">Share your event</button>
+              </Link>
             </div>
           </div>
         </section>
@@ -251,13 +257,17 @@ export default function Home() {
               <div className="space-y-4">
                 <p className="text-2xl font-bold">Propose a research project</p>
                 <p className="text-md">Our research projects are aimed at answering diverse research questions giving the opportunity to study an area of interest in depth.</p>
+                <Link href="/submitevent" className='mt-4 inline-block text-maroon'>
                 <button className="p-4 border border-maroon text-maroon rounded-lg">Submit a proposal</button>
+                </Link>
               </div>
 
               <div className="space-y-4">
                 <p className="text-2xl font-bold">Submit research materials</p>
                 <p className="text-md">We welcome any site visitor to submit research papers, policy briefs, policy documents, research-relevant audio visual materials and books to become publicly accessible on GRH.</p>
+                <Link href="/submitevent" className='mt-4 inline-block text-maroon'>
                 <button className="p-4 border border-maroon text-maroon rounded-lg">Submit Your Research</button>
+                </Link>
               </div>
             </div>
           </div>
