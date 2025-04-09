@@ -4,7 +4,7 @@ import { IoChevronForward } from "react-icons/io5";
 
 export default function Home() {
   return (
-    <div className="relative z-20 min-h-screen bg-white">
+    <div className="relative z-20 min-h-screen bg-white scroll-smooth">
       <main>
         {/* Hero Section */}
         <section className="relative">
@@ -40,7 +40,7 @@ export default function Home() {
         </section>
 
         {/* Research Section */}
-        <section className="py-16 px-4 md:px-8 lg:px-20">
+        <section className="py-16 px-4 md:px-8 lg:px-20" id="research">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
             <div className="space-y-6 lg:w-1/2">
               <div className="space-y-4">
@@ -144,7 +144,7 @@ export default function Home() {
         </section>
 
         {/* Policy Section */}
-        <section className="py-16 px-4 md:px-8 lg:px-16 bg-beige">
+        <section className="py-16 px-4 md:px-8 lg:px-16 bg-beige" id="policy">
           <div className="flex flex-col lg:flex-row gap-8 mb-12">
             <div className="lg:w-1/2">
               <Image
@@ -200,7 +200,7 @@ export default function Home() {
         </section>
 
         {/* Get Involved Section */}
-        <section className="py-16 px-4 md:px-8 lg:px-16 bg-white">
+        <section className="py-16 px-4 md:px-8 lg:px-16 bg-white" id="involved">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 mb-12">
             <div className="lg:w-1/2 space-y-4">
               <p className="font-bold text-3xl">Get Involved</p>

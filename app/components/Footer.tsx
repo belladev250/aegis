@@ -74,16 +74,16 @@ const Footer = () => {
             
             {/* Social Media Icons */}
             <div className="flex space-x-4 pt-4">
-              <a href="#" className="hover:text-gray-300 transition-colors">
+              <a href="" className="hover:text-gray-300 transition-colors">
                 <FaTwitter className="text-2xl" />
               </a>
-              <a href="#" className="hover:text-gray-300 transition-colors">
+              <a href="" className="hover:text-gray-300 transition-colors">
                 <FaFacebook className="text-2xl" />
               </a>
-              <a href="#" className="hover:text-gray-300 transition-colors">
+              <a href="" className="hover:text-gray-300 transition-colors">
                 <FaInstagram className="text-2xl" />
               </a>
-              <a href="#" className="hover:text-gray-300 transition-colors">
+              <a href="" className="hover:text-gray-300 transition-colors">
                 <FaLinkedin className="text-2xl" />
               </a>
             </div>
