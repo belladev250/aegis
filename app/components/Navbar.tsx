@@ -29,18 +29,16 @@ const Navbar = () => {
           <Link href="/" className='hover:text-maroon transition-colors duration-200'>Home</Link>
           <Link href="/about" className='hover:text-maroon transition-colors duration-200'>About Us</Link>
           <a href="#research" className="hover:text-maroon transition-colors duration-200">Aegis Research</a>
-<a href="#policy" className="hover:text-maroon transition-colors duration-200">Policy & Research</a>
-<a href="#involved" className="hover:text-maroon transition-colors duration-200">Get Involved</a>
+    <a href="#policy" className="hover:text-maroon transition-colors duration-200">Policy & Research</a>
+    <a href="#involved" className="hover:text-maroon transition-colors duration-200">Get Involved</a>
 
           <Link href="/news" className='hover:text-maroon transition-colors duration-200'>News</Link>
           <Link href="/contact" className='hover:text-maroon transition-colors duration-200'>Contact Us</Link>
           
         </nav>
 
-        {/* Desktop Auth Buttons */}
-       
 
-        {/* Mobile Menu Button */}
+              {/* Mobile Menu Button */}
         <button
           className='md:hidden text-navy focus:outline-none'
           onClick={() => setIsOpen(!isOpen)}
