@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoChevronForward } from 'react-icons/io5';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -16,10 +17,12 @@ const Footer = () => {
               knowledge society around genocide prevention and peacebuilding
               policy and practice in Rwanda.
             </p>
-            <div className="flex items-center space-x-2 cursor-pointer group">
-              <p className="text-lg font-bold group-hover:underline">Read more</p>
-              <IoChevronForward className="text-2xl group-hover:translate-x-1 transition-transform" />
-            </div>
+            <Link href="/about" className='mt-4 inline-block text-white'>
+              <div className="flex items-center space-x-2 cursor-pointer group">
+                <p className="text-lg font-bold group-hover:underline">Read more</p>
+                <IoChevronForward className="text-2xl group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           </div>
 
           {/* Latest News Column */}
@@ -30,10 +33,12 @@ const Footer = () => {
               <li className="hover:text-gray-200 cursor-pointer">Navigating Intergenerational Legacies: Insights from Aegis Trust's Research for Policy Conference</li>
               <li className="hover:text-gray-200 cursor-pointer">Aegis strengthens Rwandan research capacity</li>
             </ul>
-            <div className="flex items-center space-x-2 cursor-pointer group">
-              <p className="text-lg font-bold group-hover:underline">Read more</p>
-              <IoChevronForward className="text-2xl group-hover:translate-x-1 transition-transform" />
-            </div>
+            <Link href="/news" className='mt-4 inline-block text-white'>
+              <div className="flex items-center space-x-2 cursor-pointer group">
+                <p className="text-lg font-bold group-hover:underline">Read more</p>
+                <IoChevronForward className="text-2xl group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           </div>
 
           {/* Latest Tweets Column */}
@@ -42,16 +47,18 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex gap-2">
                 <p className="text-md">
-                  13 DAYS REMAINING to send in your application for a Research Grant. 
+                  13 DAYS REMAINING to send in your application for a Research Grant.
                   If you are a Rwandan Researcher interested in writing about Peace-building,
                   Genocide studies or Peace Education, Do not miss this opportunity!
                 </p>
               </div>
             </div>
-            <div className="flex items-center space-x-2 cursor-pointer group">
-              <p className="text-lg font-bold group-hover:underline">Read more</p>
-              <IoChevronForward className="text-2xl group-hover:translate-x-1 transition-transform" />
-            </div>
+            <Link href="https://x.com/Aegis_Trust" className='mt-4 inline-block text-white' target='_blank'>
+              <div className="flex items-center space-x-2 cursor-pointer group">
+                <p className="text-lg font-bold group-hover:underline">View all posts</p>
+                <IoChevronForward className="text-2xl group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           </div>
 
           {/* Contact Us Column */}
@@ -71,37 +78,32 @@ const Footer = () => {
                 <p>Kigali Genocide Memorial, Gisozi, Kigali, Rwanda</p>
               </div>
             </div>
-            
+
             {/* Social Media Icons */}
             <div className="flex space-x-4 pt-4">
-              <a href="" className="hover:text-gray-300 transition-colors">
+              <Link href="https://x.com/Aegis_Trust" className='mt-4 inline-block text-white' target='_blank'>
                 <FaTwitter className="text-2xl" />
-              </a>
-              <a href="" className="hover:text-gray-300 transition-colors">
+              </Link>
+              <Link href="https://web.facebook.com/AegisTrust" className='mt-4 inline-block text-white' target='_blank'>
                 <FaFacebook className="text-2xl" />
-              </a>
-              <a href="" className="hover:text-gray-300 transition-colors">
+              </Link>
+              {/* <a href="#" className="hover:text-gray-300 transition-colors">
                 <FaInstagram className="text-2xl" />
-              </a>
-              <a href="" className="hover:text-gray-300 transition-colors">
+              </a> */}
+              <Link href="https://www.linkedin.com/company/aegistrust/" className='mt-4 inline-block text-white' target='_blank'>
                 <FaLinkedin className="text-2xl" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      
+
       {/* Bottom Footer */}
       <div className="bg-maroon border-t border-white/10">
         <div className="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-white/80">
-            © {new Date().getFullYear()} Genocide Research Hub. All rights reserved.
+          Copyright © {new Date().getFullYear()} Aegis Trust. All Rights Reserved. Registered Charity: UK - Aegis Trust, charity no. 1082856, US - Aegis America Inc, EIN 31-1769192, Rwanda - Aegis Rwanda
           </p>
-          <div className="flex space-x-6 mt-4 sm:mt-0">
-            <a href="#" className="text-sm text-white/80 hover:text-white">Terms of Service</a>
-            <a href="#" className="text-sm text-white/80 hover:text-white">Privacy Policy</a>
-            <a href="#" className="text-sm text-white/80 hover:text-white">Cookie Policy</a>
-          </div>
         </div>
       </div>
     </footer>
