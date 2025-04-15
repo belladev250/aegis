@@ -116,7 +116,7 @@ export default function Research() {
                         <div className="space-y-3 md:space-y-4 border w-full md:w-1/3 border-borderColor p-4 md:p-6 rounded-lg">
                             <p className="text-lg md:text-xl font-semibold">Aegis Research Event</p>
                             <p className="text-sm md:text-base">The following presents events organized to support knowledge sharing among..</p>
-                            <Link href="/events" className='inline-flex items-center text-maroon font-bold hover:text-maroon-dark transition-colors'>
+                            <Link href="/revents" className='inline-flex items-center text-maroon font-bold hover:text-maroon-dark transition-colors'>
                                 <div className="flex space-x-2 cursor-pointer">
                                     <p className="text-maroon text-sm md:text-base">Learn more </p>
                                     <IoChevronForward className="text-maroon text-lg md:text-xl" />

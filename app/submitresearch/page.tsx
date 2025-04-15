@@ -13,36 +13,27 @@ const SubmitResearchMaterial = () => {
                 {/* Submission Guidelines Section */}
                 <div className="bg-white shadow overflow-hidden sm:rounded-lg">
                     <div className="px-4 py-5 sm:px-6 bg-gray-50">
-                        <h2 className="text-lg leading-6 font-medium text-gray-900">Submission Guidelines</h2>
+                        <h2 className="text-lg leading-6 font-medium text-gray-900">Please note the following</h2>
                     </div>
                     <div className="border-t border-gray-200 px-4 py-5 sm:p-0">
-                        <dl className="sm:divide-y sm:divide-gray-200">
-                            <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                <dt className="text-sm font-medium text-gray-500">1</dt>
-                                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                    We welcome any site visitor to submit research papers, policy briefs, policy documents, research-relevant audio visual materials and books to become publicly accessible on GRH.
-                                </dd>
+                        <div className="sm:divide-y sm:divide-gray-200">
+                            <div className="py-4 sm:py-5 sm:gap-4 sm:px-6">
+                                1. We welcome any site visitor to submit research papers, policy briefs, policy documents, research-relevant audio visual materials and books to become publicly accessible on GRH.
                             </div>
-                            <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                <dt className="text-sm font-medium text-gray-500">2</dt>
-                                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                    We review submitted materials regularly and welcome a diverse range of materials that are relevant to the themes of this site and that meet a high academic standard.
-                                </dd>
+                            <div className="py-4 sm:py-5 sm:gap-4 sm:px-6">
+                                2. We review submitted materials regularly and welcome a diverse range of materials that are relevant to the themes of this site and that meet a high academic standard.
                             </div>
-                            <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                <dt className="text-sm font-medium text-gray-500">3</dt>
-                                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                    If you do not have a file to attach, or if the distribution of the file would be a breach of copyright, then we still accept submissions that include a web link to the original document.
-                                </dd>
+                            <div className="py-4 sm:py-5 sm:gap-4 sm:px-6">
+                                3. If you do not have a file to attach, or if the distribution of the file would be a breach of copyright, then we still accept submissions that include a web link to the original document.
                             </div>
-                        </dl>
+                        </div>
                     </div>
                 </div>
 
                 {/* Research Submission Form */}
                 <div className="bg-white shadow overflow-hidden sm:rounded-lg mt-16">
                     <div className="px-4 py-5 sm:p-6">
-                    <h2 className="text-lg leading-6 font-medium text-gray-900">Submit Research Material</h2>
+                        <h2 className="text-lg leading-6 font-medium text-gray-900">Submit Research Material</h2>
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
@@ -120,6 +111,7 @@ const SubmitResearchMaterial = () => {
                                     <option>Policy Document</option>
                                     <option>Audio Visual Material</option>
                                     <option>Book</option>
+                                    <option>Blog</option>
                                 </select>
                             </div>
 
@@ -144,11 +136,13 @@ const SubmitResearchMaterial = () => {
                                         "Education",
                                         "Transitional justice",
                                         "Media",
-                                        "Neocorrelation and social cohesion",
+                                        "Reconciliation and social cohesio",
                                         "Peace education",
                                         "Gender dimensions of past-genocide recovery",
-                                        "Peer-genocide economic development",
-                                        "Memory, identity and narrative"
+                                        "Post-genocide economic development",
+                                        "Memory, identity and narrative",
+                                        "Trauma and psychological and psycho-social issues",
+                                        "Peacebuilding"
                                     ].map((theme) => (
                                         <div key={theme} className="flex items-center">
                                             <input
@@ -162,7 +156,12 @@ const SubmitResearchMaterial = () => {
                                             </label>
                                         </div>
                                     ))}
+
                                 </div>
+                            </div>
+                            <div className='space-y-4'>
+                                <label htmlFor="">Upload files</label><br />
+                                <input type="file" name="research" id="" />
                             </div>
 
                             <div className="pt-4">
@@ -180,7 +179,7 @@ const SubmitResearchMaterial = () => {
 
 
                 {/* Info Box */}
-                <div className="mt-10 bg-maroon border-l-4 border-maroon p-4">
+                <div className="mt-10 bg-grey border-l-4 border-maroon p-4">
                     <div className="flex">
                         <div className="flex-shrink-0">
                             <svg className="h-5 w-5 text-maroon-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
