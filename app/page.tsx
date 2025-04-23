@@ -69,7 +69,7 @@ export default function Home() {
             <div className="lg:w-1/2 space-y-4">
               <div className="flex gap-4 lg:gap-10 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
                 <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
-                <Link href="/papers" className='mt-4 inline-block text-maroon'>
+                <Link href="/document" className='mt-4 inline-block text-maroon'>
                   <div className="flex items-center gap-2">
                     <p className="text-maroon text-xl">Aegis Working Papers</p>
                     <IoChevronForward className="text-maroon text-3xl" />
