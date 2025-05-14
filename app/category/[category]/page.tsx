@@ -47,7 +47,7 @@ export default function CategoryPage() {
         console.log('Found total documents:', allDocs.length);
         
         // Map the data to a simpler structure
-        const formattedData = allDocs.map(item => {
+        const formattedData = allDocs.map((item:any) => {
           console.log('Document item:', item);
           
           // Handle both structures: flat or nested under attributes
@@ -137,23 +137,23 @@ export default function CategoryPage() {
         // Filter by category if needed
         let filteredDocs = formattedData;
         if (categorySlug === 'working-papers') {
-          filteredDocs = formattedData.filter(doc => 
+          filteredDocs = formattedData.filter((doc:any) => 
             doc.documentType.toLowerCase().includes('working paper')
           );
         } else if (categorySlug === 'policy-briefs') {
-          filteredDocs = formattedData.filter(doc => 
+          filteredDocs = formattedData.filter((doc:any) => 
             doc.documentType.toLowerCase().includes('policy brief')
           );
         } else if (categorySlug === 'journal-articles') {
-          filteredDocs = formattedData.filter(doc => 
+          filteredDocs = formattedData.filter((doc:any) => 
             doc.documentType.toLowerCase().includes('journal')
           );
         } else if (categorySlug === 'research-projects') {
-          filteredDocs = formattedData.filter(doc => 
+          filteredDocs = formattedData.filter((doc:any) => 
             doc.documentType.toLowerCase().includes('research project')
           );
         } else if (categorySlug === 'research-events') {
-          filteredDocs = formattedData.filter(doc => 
+          filteredDocs = formattedData.filter((doc:any) => 
             doc.documentType.toLowerCase().includes('event')
           );
         }
@@ -161,7 +161,7 @@ export default function CategoryPage() {
         console.log('Filtered documents:', filteredDocs);
         setDocuments(filteredDocs);
 
-      } catch (err) {
+      } catch (err:any) {
         console.error('Fetch error:', err);
         setError(err.message);
       } finally {
@@ -197,42 +197,49 @@ export default function CategoryPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {documents.length > 0 ? (
           documents.map(doc => (
-            <div key={doc.id} className="border rounded-lg p-6 shadow">
+            <div key={(doc as { id: string }).id} className="border rounded-lg p-6 shadow">
+
               <h2 className="text-xl font-semibold mb-3">
-                {doc.title || `Document ${doc.documentId}`}
+                {(doc as any).title || `Document ${(doc as any).documentId}`}
               </h2>
               
-              {doc.author && (
-                <p className="mb-2"><strong>Author:</strong> {doc.author}</p>
-              )}
-              
-              {doc.publisher && (
-                <p className="mb-2"><strong>Publisher:</strong> {doc.publisher}</p>
-              )}
-              
-              {doc.publicationDate && (
-                <p className="mb-2"><strong>Publication Date:</strong> {doc.publicationDate}</p>
-              )}
-              
-              {doc.documentType && (
-                <p className="mb-2"><strong>Type:</strong> {doc.documentType}</p>
-              )}
-           {doc.coverUrl && typeof doc.coverUrl === 'string' && (
-           <Image src={`/${doc.coverUrl}`} height={300} width={300} alt="cover" />
-        )}
+              {(doc as any).author && (
+  <p className="mb-2"><strong>Author:</strong> {(doc as any).author}</p>
+)}
+
+{(doc as any).publisher && (
+  <p className="mb-2"><strong>Publisher:</strong> {(doc as any).publisher}</p>
+)}
+
+{(doc as any).publicationDate && (
+  <p className="mb-2"><strong>Publication Date:</strong> {(doc as any).publicationDate}</p>
+)}
+
+{(doc as any).documentType && (
+  <p className="mb-2"><strong>Type:</strong> {(doc as any).documentType}</p>
+)}
+
+{(doc as any).coverUrl && typeof (doc as any).coverUrl === 'string' && (
+  <Image
+    src={`/${(doc as any).coverUrl}`}
+    height={300}
+    width={300}
+    alt="cover"
+  />
+)}
 
             
               
-              {doc.documentFileUrl && (
+              {(doc as any).documentFileUrl && (
                 <a 
-                  href={doc.documentFileUrl.startsWith('http') 
-                    ? doc.documentFileUrl 
-                    : `${process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337'}${doc.documentFileUrl}`}
+                  href={(doc as any).documentFileUrl.startsWith('http') 
+                    ? (doc as any).documentFileUrl 
+                    : `${process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337'}${(doc as any).documentFileUrl}`}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block bg-maroon text-white py-2 px-4 rounded mt-4"
                 >
-                  Download {doc.documentFileName}
+                  Download {(doc as any).documentFileName}
                 </a>
               )}
             </div>
