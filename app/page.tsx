@@ -66,57 +66,62 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:w-1/2 space-y-4">
-              <div className="flex gap-4 lg:gap-10 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
-                <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
-                <Link href="/document" className='mt-4 inline-block text-maroon'>
-                  <div className="flex items-center gap-2">
-                    <p className="text-maroon text-xl">Aegis Working Papers</p>
-                    <IoChevronForward className="text-maroon text-3xl" />
-                  </div>
-                </Link>
-              </div>
+          {/* Research Section - Updated with simpler links */}
+<div className="lg:w-1/2 space-y-4">
+  <div className="flex gap-4 lg:gap-10 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
+    <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
+    {/* <Link href="/category/working-papers" className='mt-4 inline-block text-maroon'> */}
+    <Link href="/category/working-papers" className='mt-4 inline-block text-maroon'>
 
-              <div className="flex gap-4 lg:gap-10 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
-                <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
-                <Link href="/papers" className='mt-4 inline-block text-maroon'>
-                  <div className="flex items-center gap-2">
-                    <p className="text-maroon text-xl">Aegis Policy Briefs</p>
-                    <IoChevronForward className="text-maroon text-3xl" />
-                  </div>
-                </Link>
-              </div>
+      <div className="flex items-center gap-2">
+        <p className="text-maroon text-xl">Aegis Working Papers</p>
+        <IoChevronForward className="text-maroon text-3xl" />
+      </div>
+    </Link>
+  </div>
 
-              <div className="flex gap-4 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
-                <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
-                <Link href="/papers" className='mt-4 inline-block text-maroon'>
-                  <div className="flex items-center gap-2">
-                    <p className="text-maroon text-xl">RPHE Journal articles and book chapters</p>
-                    <IoChevronForward className="text-maroon text-3xl" />
-                  </div>
-                </Link>
-              </div>
+  <div className="flex gap-4 lg:gap-10 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
+    <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
+    <Link href="/category/policy-briefs" className='mt-4 inline-block text-maroon'>
+      <div className="flex items-center gap-2">
+        <p className="text-maroon text-xl">Aegis Policy Briefs</p>
+        <IoChevronForward className="text-maroon text-3xl" />
+      </div>
+    </Link>
+  </div>
 
-              <div className="flex gap-4 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
-                <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
-                <Link href="/projects" className='mt-4 inline-block text-maroon'>
-                  <div className="flex items-center gap-2">
-                    <p className="text-maroon text-xl">Research Projects</p>
-                    <IoChevronForward className="text-maroon text-3xl" />
-                  </div>
-                </Link>
-              </div>
+  <div className="flex gap-4 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
+    <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
+    <Link href="/category/journal-articles" className='mt-4 inline-block text-maroon'>
+      <div className="flex items-center gap-2">
+        <p className="text-maroon text-xl">RPHE Journal articles and book chapters</p>
+        <IoChevronForward className="text-maroon text-3xl" />
+      </div>
+    </Link>
+  </div>
 
-              <div className="flex gap-4 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
-                <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
-                <Link href="/revents" className='mt-4 inline-block text-maroon'>
-                  <div className="flex items-center gap-2">
-                    <p className="text-maroon text-xl">Aegis Research Events</p>
-                    <IoChevronForward className="text-maroon text-3xl" />
-                  </div>
-                </Link>
-              </div>
-            </div>
+  <div className="flex gap-4 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
+    <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
+    <Link href="/category/research-projects" className='mt-4 inline-block text-maroon'>
+      <div className="flex items-center gap-2">
+        <p className="text-maroon text-xl">Research Projects</p>
+        <IoChevronForward className="text-maroon text-3xl" />
+      </div>
+    </Link>
+  </div>
+
+  
+
+  <div className="flex gap-4 border-2 border-borderColor p-4 rounded-lg cursor-pointer">
+    <Image src='/about.png' alt="default" width={80} height={80} className="self-center" />
+    <Link href="/category/research-events" className='mt-4 inline-block text-maroon'>
+      <div className="flex items-center gap-2">
+        <p className="text-maroon text-xl">Aegis Research Events</p>
+        <IoChevronForward className="text-maroon text-3xl" />
+      </div>
+    </Link>
+  </div>
+</div>
           </div>
         </section>
 
